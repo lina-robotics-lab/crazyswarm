@@ -3,7 +3,7 @@
 import numpy as np
 from pycrazyswarm import *
 
-Z = 0.6
+Z = 1.0
 
 if __name__ == "__main__":
     swarm = Crazyswarm()
@@ -19,5 +19,7 @@ if __name__ == "__main__":
     print("press button to continue...")
     swarm.input.waitUntilButtonPressed()
 
-    allcfs.land(targetHeight=0.02, duration=1.0+Z)
-    timeHelper.sleep(1.0+Z)
+    # allcfs.land(targetHeight=0.02, duration=1.0+Z)
+    for cf in allcfs.crazyflies:
+        cf.land(targetHeight=0.02, duration=1.0+Z)
+        timeHelper.sleep(1.0+Z)

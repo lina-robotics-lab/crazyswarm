@@ -23,6 +23,9 @@ def goCircle(timeHelper, cf, totalTime, radius, kPosition):
             errorX = desiredPos - cf.position() 
             cf.cmdVelocityWorld(np.array([vx, vy, 0] + kPosition * errorX), yawRate=0)
             timeHelper.sleepForRate(sleepRate)
+            if time > totalTime:
+                break
+        cf.land(targetHeight=0.02, duration=1.0+Z)
 
 
 if __name__ == "__main__":
@@ -32,4 +35,4 @@ if __name__ == "__main__":
 
     allcfs.takeoff(targetHeight=Z, duration=1.0+Z)
     timeHelper.sleep(2 + Z)
-    goCircle(timeHelper, allcfs.crazyflies[0], totalTime=4, radius=1, kPosition=1)
+    goCircle(timeHelper, allcfs.crazyflies[0], totalTime=10, radius=0.3, kPosition=1)
