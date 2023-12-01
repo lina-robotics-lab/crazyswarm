@@ -23,7 +23,7 @@ if __name__ == "__main__":
         timeHelper.sleep(2.5)
         for cf in allcfs.crazyflies:
             print(cf.initialPosition)
-            pos = np.array(cf.initialPosition) + np.array([-0.4, 0, 1.0])
+            pos = np.array(cf.initialPosition) + np.array([-0.4, -1.0, 1.0])
             cf.goTo(pos, 0, 2.0)
         timeHelper.sleep(2.5)
 

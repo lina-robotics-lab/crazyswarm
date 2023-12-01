@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "name": "ROS: Launch",
+        "type": "ros",
+        "request": "launch",
+        "target": "/home/mht/csw_ws/crazyswarm/ros_ws/src/crazyswarm/launch/mocap_helper.launch"
+    },
+        // {
+        //     "name": "Python: Current File",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "program": "${file}",
+        //     "console": "integratedTerminal",
+        //     "justMyCode": true,
+        //     "args": ["--sim"],
+        //     "cwd":"${workspaceFolder}/scripts"
+        // }
+    ]
+}

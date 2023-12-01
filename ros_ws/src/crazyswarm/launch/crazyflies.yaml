@@ -1,32 +1,41 @@
 crazyflies:
 # - channel: 80
-#   id: 4
+#   id: 3
 #   initialPosition:
-#   - -1.01245
-#   - 1.00357
+#   - 0.501887
+#   - -2.64194
 #   - 0.0283544
 #   type: defaultSingleMarker
 - channel: 80
   id: 1
   initialPosition:
-  - -0.473947
-  - 0.488308
-  - 0.0164484
-  type: defaultSingleMarker
-- channel: 80
-  id: 2
-  initialPosition:
-  - -0.466122
-  - 0.985611
-  - 0.0164484
-  type: defaultSingleMarker
-- channel: 80
-  id: 3
-  initialPosition:
-  - -1.06249
-  - 0.807684
-  - 0.0164484
-  type: defaultSingleMarker
+  - -1.00784
+  - -0.480924
+  - 0.032
+  type: CF21SingleMarker # defaultSingleMarker
+
+# - channel: 80
+#   id: 1
+#   initialPosition:
+#   - -0.473947
+#   - 0.488308
+#   - 0.0164484
+#   type: defaultSingleMarker
+# - channel: 80
+#   id: 2
+#   initialPosition:
+#   - -0.466122
+#   - 0.985611
+#   - 0.0164484
+#   type: defaultSingleMarker
+# - channel: 80
+#   id: 3
+#   initialPosition:
+#   - -1.06249
+#   - 0.807684
+#   - 0.0164484
+#   type: defaultSingleMarker
+
 
   
 

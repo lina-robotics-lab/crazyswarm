@@ -46,9 +46,9 @@
     </rosparam>
   </node>
 
-  <node name="joy" pkg="joy" type="joy_node" output="screen">
+  <!-- <node name="joy" pkg="joy" type="joy_node" output="screen">
     <param name="dev" value="$(arg joy_dev)" />
-  </node>
+  </node> -->
 
   <node pkg="crazyswarm" type="crazyswarm_teleop" name="crazyswarm_teleop" output="screen">
     <param name="csv_file" value="$(find crazyswarm)/launch/figure8_smooth.csv" />
